@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\VideoGameCatalogue.API.Interfaces\VideoGameCatalogue.API.Interfaces.csproj" />
     <ProjectReference Include="..\VideoGameCatalogue.Model\VideoGameCatalogue.Model.csproj" />
   </ItemGroup>
 

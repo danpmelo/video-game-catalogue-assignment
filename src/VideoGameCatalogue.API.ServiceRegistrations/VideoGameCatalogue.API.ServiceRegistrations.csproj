@@ -9,15 +9,14 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.7">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.7" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\VideoGameCatalogue.App\VideoGameCatalogue.App.csproj" />
+    <ProjectReference Include="..\VideoGameCatalogue.API.Interfaces\VideoGameCatalogue.API.Interfaces.csproj" />
+    <ProjectReference Include="..\VideoGameCatalogue.App\VideoGameCatalogue.App.csproj" PrivateAssets="All" />
     <ProjectReference Include="..\VideoGameCatalogue.Model\VideoGameCatalogue.Model.csproj" />
+    <ProjectReference Include="..\VideoGameCatalogue.Repository\VideoGameCatalogue.Repository.csproj" />
   </ItemGroup>
 
 </Project>

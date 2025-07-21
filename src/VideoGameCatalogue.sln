@@ -4,12 +4,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGameCatalogue.API", "VideoGameCatalogue.API\VideoGameCatalogue.API.csproj", "{4C8B6020-4A68-4704-ABBC-D6F3738F2E3C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6B8C8831-D26F-4F8C-A287-D6B7E727D492} = {6B8C8831-D26F-4F8C-A287-D6B7E727D492}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGameCatalogue.Model", "VideoGameCatalogue.Model\VideoGameCatalogue.Model.csproj", "{6B8C8831-D26F-4F8C-A287-D6B7E727D492}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGameCatalogue.App", "VideoGameCatalogue.App\VideoGameCatalogue.App.csproj", "{554ABCDF-E4BE-4729-91D6-C5E28304DFEC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6B8C8831-D26F-4F8C-A287-D6B7E727D492} = {6B8C8831-D26F-4F8C-A287-D6B7E727D492}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGameCatalogue.Repository", "VideoGameCatalogue.Repository\VideoGameCatalogue.Repository.csproj", "{53DEBE4F-99D0-4B15-882A-E40911D2BC98}"
+	ProjectSection(ProjectDependencies) = postProject
+		{554ABCDF-E4BE-4729-91D6-C5E28304DFEC} = {554ABCDF-E4BE-4729-91D6-C5E28304DFEC}
+		{6B8C8831-D26F-4F8C-A287-D6B7E727D492} = {6B8C8831-D26F-4F8C-A287-D6B7E727D492}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGameCatalogue.API.ServiceRegistrations", "VideoGameCatalogue.API.ServiceRegistrations\VideoGameCatalogue.API.ServiceRegistrations.csproj", "{01BEBE05-0672-45FE-BF71-E1EEF936CB12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGameCatalogue.API.Interfaces", "VideoGameCatalogue.API.Interfaces\VideoGameCatalogue.API.Interfaces.csproj", "{3283E7D7-7859-0E29-5A4B-9291AD27855A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +47,14 @@ Global
 		{53DEBE4F-99D0-4B15-882A-E40911D2BC98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53DEBE4F-99D0-4B15-882A-E40911D2BC98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53DEBE4F-99D0-4B15-882A-E40911D2BC98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01BEBE05-0672-45FE-BF71-E1EEF936CB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01BEBE05-0672-45FE-BF71-E1EEF936CB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01BEBE05-0672-45FE-BF71-E1EEF936CB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01BEBE05-0672-45FE-BF71-E1EEF936CB12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3283E7D7-7859-0E29-5A4B-9291AD27855A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3283E7D7-7859-0E29-5A4B-9291AD27855A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3283E7D7-7859-0E29-5A4B-9291AD27855A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3283E7D7-7859-0E29-5A4B-9291AD27855A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

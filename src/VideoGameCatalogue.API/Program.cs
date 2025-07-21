@@ -23,10 +23,7 @@ namespace VideoGameCatalogue.API
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
 
             app.MapControllers();
 
